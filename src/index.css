@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'chayanaFont';
+    src: url('/fonts/Li Chayana Teesta Unicode.ttf');
+}
+
+@font-face {
+    font-family: 'nakkhatraFont';
+    src: url('/fonts/Li Alinur Nakkhatra Unicode.ttf');
+}
+
+@font-face {
+    font-family: 'uthmani';
+    src: url('/fonts/Uthmanic.otf');
+}
+
+
+:root {
+    --primary-color: #0C1E3E;
+    --secondary-color: #D1E2F3;
+    --text-color: #F4F4F9;
+    --accent-color: #7A9BAF;
+}
+
+body {
+    color: var(--primary-color);
+    font-family: 'Poppins';
+}
+
+.headerShadow {
+    box-shadow: 0 5px 14.25px .75px rgba(12, 105, 184, .1);
+}
+
+.right-border {
+    position: absolute;
+    left: 0;
+    top: -50px;
+    width: 565px;
+    height: 565px;
+    z-index: -1;
+}
+
+.rotateBorder:before {
+    border: 3px dashed #4897aa;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    -webkit-animation: circle 60s linear infinite;
+    animation: circle 60s linear infinite;
+    width: 100%;
+    height: 100%;
+}
+
+@-webkit-keyframes circle {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes circle {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
