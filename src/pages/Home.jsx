@@ -21,19 +21,20 @@ function Home() {
           <span className='h-6 border w-auto bg-white'></span>
           <button className='hover:tracking-wider transition-all duration-150 ease-linear hover:text-secondary'>Biography</button>
         </div>
-        <div className='text-white text-center grid items-center !min-h-screen relative'>
+        <div className='text-white text-center grid items-center !min-h-screen relative  pb-24 md:py-0'>
           <FaQuoteLeft className='absolute top-[5rem] md:top-[10rem] rotate-20 left-[10rem] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-[10rem] text-[#009678]/40' />
-          <FaQuoteRight className='absolute bottom-[0rem] -rotate-20 right-[10rem] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-[10rem] text-primary/40' />
+          <FaQuoteRight className='absolute bottom-[0rem] -rotate-20 right-[9rem] md:right-[10rem] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-[10rem] text-primary/40' />
+
           <div className='grid gap-10 sm:gap-20  lg:gap-12 mt-44 sm:mt-20 lg:mt-8'>
             <p
               className='font-uthman font-bold text-5xl text-[#009678] brightness-200'
             >نُّورٌ عَلَىٰ نُورٍۢ ۗ يَهْدِى ٱللَّهُ لِنُورِهِۦ مَن يَشَآءُ</p>
-            <h4 className='text-5xl font-bold bg-black bg-clip-text text-transparent py-2'>Light upon Light! <br /> Allah guides whoever He wills to His light.</h4>
-            <span className='absolute text-2xl text-[#009678] bottom-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>24:35</span>
+            <h4 className='text-4xl sm:text-5xl font-bold bg-black bg-clip-text text-transparent py-2'>Light upon Light! <br /> Allah guides whoever He wills to His light.</h4>
+            <span className='absolute text-2xl text-[#009678] bottom-20 sm:bottom-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>24:35</span>
           </div>
         </div>
       </section>
-      <section className='min-h-screen grid place-content-center'>
+      <section className='min-h-screen grid place-content-center py-20 md:py-0'>
         <Layout>
           <Title
             heading={"Videos"}
