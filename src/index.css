@@ -19,15 +19,16 @@
 
 
 :root {
-    --primary-color: #0C1E3E;
+    --primary-color: #020014;
     --secondary-color: #D1E2F3;
     --text-color: #F4F4F9;
     --accent-color: #7A9BAF;
 }
 
 body {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-family: 'Poppins';
+    background-color: var(--primary-color);
 }
 
 .headerShadow {

@@ -7,21 +7,25 @@ import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/lectures" element={<Lectures />} />
-        <Route path="/books" element={<Books />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <main className='min-h-screen flex flex-col justify-between'>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/lectures" element={<Lectures />} />
+          <Route path="/books" element={<Books />} />
+          {/* <Route path="/blog" element={<Blog />} /> */}
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </main>
   );
 }
 
