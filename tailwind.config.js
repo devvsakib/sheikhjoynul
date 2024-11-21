@@ -14,7 +14,9 @@ export default {
         tertiary: '#009678',
       },
       fontFamily:{
-        uthman: "uthmani"
+        uthman: "uthmani",
+        nakkhatraFont: "nakkhatraFont",
+        chayanaFont: "chayanaFont",
       }
     },
   },

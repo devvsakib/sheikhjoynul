@@ -10,7 +10,6 @@ function HeroSection() {
     >
       <img src={images.line} className="absolute  min-w-[180%] md:min-w-full md:min-h-screen -right-5 md:right-[30%] xl:right-[90%] -z-10" />
       <Layout>
-
         <div className="grid md:grid-cols-2 gap-10 items-center justify-center md:justify-between mt-[12rem] md:-mt-5">
           <div className="grid gap-4 text-[#ddd]">
             <div className="border-2 border-accent py-2 px-10 rounded-full w-fit">

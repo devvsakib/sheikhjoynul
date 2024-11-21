@@ -2,7 +2,7 @@ import Divider from "./Divider";
 
 function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-4">
+    <footer className="bg-gray-800 text-white py-4 mt-32">
       <div className="text-center flex flex-col md:flex-row items-center justify-center gap-0 md:gap-2 py-5 md:py-0">
         <p>&copy; {new Date().getFullYear()} {import.meta.env.VITE_AUTHOR}</p>
 

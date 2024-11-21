@@ -1,3 +1,6 @@
 .gradText {
     @apply bg-gradient-to-t from-primary via-tertiary to-tertiary bg-clip-text text-transparent brightness-150 font-semibold
 }
+.specialText{
+    @apply text-tertiary brightness-125 font-semibold
+}
