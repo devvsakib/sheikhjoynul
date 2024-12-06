@@ -15,6 +15,7 @@ export default {
       },
       fontFamily:{
         uthman: "uthmani",
+        thuluth: "thuluth",
         nakkhatraFont: "nakkhatraFont",
         chayanaFont: "chayanaFont",
       }

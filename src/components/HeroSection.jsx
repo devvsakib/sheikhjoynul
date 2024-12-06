@@ -6,6 +6,7 @@ function HeroSection() {
     <section className="relative min-h-screen flex items-center overflow-hidden pb-32 md:pb-0"
       style={{
         background: "linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(0, 150, 120, .5)), url(/assets/images/islamic.jpg) no-repeat center center", 
+        backgroundSize: "cover"
       }}
     >
       <img src={images.line} className="absolute  min-w-[180%] md:min-w-full md:min-h-screen -right-5 md:right-[30%] xl:right-[90%] -z-10" />
@@ -22,7 +23,11 @@ function HeroSection() {
             </div>
             <div className="grid gap-3">
               <h3 className="text-5xl font-semibold text-accent relative"><span className="">Dr.</span> Joynul Abadin Bin Noman</h3>
-              <p>Sheikh Dr. Joynul Abadin Bin Noman is an esteemed researcher, educator, Islamic scholar, and author. He is the Director of <span className="text-accent font-semibold">Wahidiya Library</span>, one of the most well-known libraries in Bangladesh. He completed his undergraduate and postgraduate studies at Rajshahi University, where he earned a First-Class First in his DH, BA (Honors), and MA degrees. He holds a <span className="font-bold text-accent">Ph.D</span>. from the University of Rajshahi. Currently serves as a faculty member at the Islamic University of Madinah and specializes in Islamic studies, with a focus on Hadith.</p>
+              <p 
+                style={{
+                  textShadow: "1px 1px 5px black, -1px -1px 2px var(--tertiary-color)"
+                }}
+              >Sheikh Dr. Joynul Abadin Bin Noman is an esteemed researcher, educator and author. He is the Director of <span className="specialText">Wahidiya Library</span>, one of the most well-known libraries in Bangladesh. He completed his undergraduate and postgraduate studies at Rajshahi University, where he earned a First-Class First in his DH, BA (Honors), and MA degrees. He holds a <span className="specialText">Ph.D</span>. from the University of Rajshahi. Currently, he is at the Islamic University of Madinah, specializing in the Department of Hadith.</p>
             </div>
           </div>
           <div className="rounded-full relative border-4 border-accent overflow-hidden text-center flex justify-center  w-4/5 mx-auto md:ml-auto md:w-auto">

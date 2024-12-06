@@ -16,6 +16,10 @@
     font-family: 'uthmani';
     src: url('/fonts/Uthmanic.otf');
 }
+@font-face {
+    font-family: 'thuluth';
+    src: url('/fonts/A Thuluth Regular.ttf');
+}
 
 
 :root {
@@ -23,6 +27,7 @@
     --secondary-color: #D1E2F3;
     --text-color: #F4F4F9;
     --accent-color: #7A9BAF;
+    --tertiary-color: #009678;
 }
 
 body {

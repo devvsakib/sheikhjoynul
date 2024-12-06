@@ -1,34 +1,11 @@
-import { useEffect, useState } from 'react';
 import VideoCard from '../components/VideoCard';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { FaLink } from 'react-icons/fa';
 import Title from '../components/Title';
+import useYouTubeVideo from '../utils/useYouTubeVideo';
 
 function Lectures() {
-  const [videos, setVideos] = useState([]);
-  const API_KEY = import.meta.env.VITE_YTAPI;
-  const CHANNEL_ID = import.meta.env.VITE_EX_ID;
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchChannelVideos = async () => {
-      try {
-        const response = await axios.get(
-          `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&type=video&order=date&key=${API_KEY}&maxResults=50`
-        );
-        setVideos(response.data.items);
-        setIsLoading(false);
-      } catch (error) {
-        console.error('Error fetching channel videos:', error);
-      }
-    };
-
-    fetchChannelVideos();
-  }, [API_KEY, CHANNEL_ID]);
-
-  console.log(videos);
-
+  const { videos, isLoading } = useYouTubeVideo({ limit: 12 });
   return (
     <div className="max-w-5xl mx-auto p-4 mt-32 pb-24">
       <Title
@@ -40,8 +17,7 @@ function Lectures() {
           isLoading ? (
             <p>Loading...</p>
           ) :
-
-            videos.slice(0, 12).map((video) => (
+            videos?.map((video) => (
               <VideoCard
                 title={video.snippet.title}
                 key={video.id.videoId}
