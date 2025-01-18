@@ -34,9 +34,9 @@ function Home() {
 
           <div className='grid gap-10 sm:gap-20  lg:gap-12 mt-44 sm:mt-20 lg:mt-8'>
             <pre
-              className='font-thuluth font-bold text-5xl text-[#009678] brightness-200 tracking-wide'
+              className='font-thuluth font-bold text-2xl sm:text-5xl text-[#009678] brightness-200 tracking-wide'
             >نُّورٌ عَلَىٰ نُورٍۢ  ۗ  يَهْدِى ٱللَّهُ لِنُورِهِۦ مَن يَشَآءُ</pre>
-            <h4 className='text-4xl sm:text-5xl font-bold bg-black bg-clip-text text-transparent py-2'>Light upon Light! <br /> Allah guides whoever He wills to His light.</h4>
+            <h4 className='text-2xl sm:text-5xl font-bold bg-black bg-clip-text text-transparent py-2'>Light upon Light! <br /> Allah guides whoever He wills to His light.</h4>
             <span className='absolute text-2xl text-[#009678] bottom-20 sm:bottom-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>24:35</span>
           </div>
         </div>
